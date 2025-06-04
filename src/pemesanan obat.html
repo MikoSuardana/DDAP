@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Calistoga&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"/>
+    </head>
+        <body class="font-[Poppins]">
+        <header class="bg-[#a9cce9] px-4 py-3 flex items-center justify-between rounded-b-xl fixed top-0 left-0 w-full z-10">
+        <div class="flex items-center space-x-1">
+        <!-- Logo yang bisa diklik -->
+        <a href="beranda" >
+            <img src="logolatnems.png" class="h-10 w-auto" alt="Logo ">
+        </a>
+        </div>
+        <div class="flex items-center space-x-6 text-sm font-semibold text-gray-900 relative">
+            <nav class="flex space-x-6">
+            <div class="relative group cursor-pointer">
+            <span class="flex items-center hover-persist select-none" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="layanan-dropdown" id="layanan-label">
+                Layanan
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </span>
+            <!-- Dropdown menu -->
+            <div aria-labelledby="layanan-label" class="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity z-20" id="layanan-dropdown" role="menu">
+                <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="konsultasi" role="menuitem" tabindex="-1">Konsultasi</a>
+                <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="pemesanan obat" role="menuitem" tabindex="-1">Pemesanan Obat</a>
+            </div>
+        </div>
+            <a class="hover:underline" href="komunitas">Komunitas</a>
+            <a class="hover:underline" href="edukasi.html">Edukasi</a>
+            </nav>
+        <!-- User Avatar yang bisa diklik -->
+            <a href="/profil" class="w-8 h-8 rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <img src="iconmanu.png" alt="User Avatar" class="w-full h-full object-cover">
+        </a>
+    </div>
+    </header>
+
+    <section class="bg-white py-15 px-6 sm:px-8 lg:px-8"></section>
+    <div class="max-w-6xl mx-auto text-left ">
+            <h1 class="text-3xl font-extrabold text-[#3B4951] sm:text-4xl">
+                Pemesanan Obat
+            </h1>
+        </div>
+
+    <main class="pt-10 pb-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-6xl">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800">Keluhan Kamu</h2>
+                <div class="mb-8">
+                    <textarea
+                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 bg-[#E4F0F7] h-32 resize-none"
+                        placeholder="Tulis keluhan Anda di sini..."
+                    ></textarea>
+                </div>
+
+                <div class="mb-8 flex items-center">
+                    <label for="doctor-prescription" class="text-lg font-medium text-black mr-4">Bukti Resep Dokter</label>
+                    <input type="file" id="doctor-prescription" class="hidden">
+                    <label for="doctor-prescription" class="cursor-pointer bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                        Upload
+                    </label>
+                </div>
+                <h2 class="text-2xl font-semibold mb-6 text-black">Deskripsi</h2>
+                <div class="mb-4">
+                    <textarea
+                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 bg-[#E4F0F7] h-32 resize-none"
+                        placeholder="Berikan deskripsi tambahan..."
+                    ></textarea>
+
+                    <button class="bg-blue-400 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:bg-blue-500 transition-colors duration-300 block mx-auto mt-8">
+                        Ajukan Pemesanan
+                    </button>
+                </div>
+                </div>
+        </main>
+    </body>
+</html>
